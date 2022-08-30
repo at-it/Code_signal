@@ -23,14 +23,14 @@ def solution(input_array):
     return False
 
 
-def is_diff_by_one_char_2(string_1, string_2):
+def is_diff_by_one_char(string_1, string_2):
     return sum([a[0] != a[1] for a in zip(string_1, string_2)])
 
 
 print(solution(input_array))
 
 # actually proven to be a slower one in cases of strings around ~30 letters
-def is_diff_by_one_char(string_1, string_2):
+def is_diff_by_one_char_2(string_1, string_2):
     counter = 0
     string_1_elements = [x for x in string_1]
     string_2_elements = [x for x in string_2]
