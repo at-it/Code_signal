@@ -3,6 +3,6 @@
 s = "cabca"
 
 def solution(s):
-    return len(set([x for x in s]))
+    return len(set(s))
 
 print(solution(s))
