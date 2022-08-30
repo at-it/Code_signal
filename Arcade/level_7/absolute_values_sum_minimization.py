@@ -21,5 +21,3 @@ print(solution(a))
 # if only element needs to be returned, below is good enough.
 def solution_2(a):
     return a[(len(a) - 1)//2]
-
-  
