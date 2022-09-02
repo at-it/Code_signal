@@ -3,5 +3,5 @@ as any other child. Determine how many pieces of candy will be eaten by all the 
 
 
 def solution(n, m):
-    return (m % n) * n
+    return m // n * n
 
