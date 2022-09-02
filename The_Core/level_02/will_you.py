@@ -12,6 +12,6 @@ they are loved but not young or not beautiful.'''
 
 def solution(young, beautiful, loved):
     condition_1 = young and beautiful and not loved
-    condition_2 = loved and (not young or not beautiful)
+    condition_2 = loved and not young and not beautiful
 
     return condition_1 or condition_2
