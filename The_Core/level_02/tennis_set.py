@@ -5,6 +5,11 @@ until one of the players has won 7 games.
 Given two integers score1 and score2, your task is to determine if it is possible for a tennis set to be finished with a final score of score1 : score2.'''
 
 
+
 def solution(score_1, score_2):
-    
-    pass
+    if max(score_1, score_2) == 6 and min(score_1, score_2) != 5:
+        return True
+    if max(score_1, score_2) == 7 and 5 <= min(score_1, score_2) < 7:
+        return True
+    else:
+        return False
